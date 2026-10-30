@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 09</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 32px;
+      background: #f4f4f4;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #000;
+    }
+
+    main {
+      width: min(100%, 820px);
+      margin: 16px auto;
+      padding: 28px 12px;
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+    }
+
+    .hello {
+      margin: 4px 0 34px;
+      padding: 5px 10px;
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: bold;
+      line-height: 1.25;
+    }
+
+    .hello:last-child { margin-bottom: 0; }
+
+    .first {
+      background: lightblue;
+      border: 12px double tomato;
+    }
+
+    .second {
+      background: yellow;
+      border: 5px solid #168cff;
+      border-radius: 17px;
+      padding: 2px 4px;
+    }
+
+    .third {
+      background: mediumseagreen;
+      border: 16px dotted gray;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 12px; }
+      main { padding: 18px 8px; }
+      .hello { margin-bottom: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="hello first">Hello World</h1>
+    <h1 class="hello second">Hello World</h1>
+    <h1 class="hello third">Hello World</h1>
+  </main>
+</body>
+</html>
